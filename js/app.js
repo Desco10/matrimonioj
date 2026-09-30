@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const regaloTitulo = document.getElementById("regaloTitulo");
   const regaloDescripcion = document.getElementById("regaloDescripcion");
+  const lluviaSobres = document.querySelector(".gift-method");
 
   const musica = document.getElementById("musica");
   const musicControl = document.getElementById("musicControl");
@@ -441,7 +442,10 @@ if (EVENTO.cristal) {
 
   regaloTitulo.textContent = EVENTO.regalo.titulo;
   regaloDescripcion.textContent = EVENTO.regalo.descripcion;
-
+ if (lluviaSobres) {
+  lluviaSobres.style.display =
+    EVENTO.regalo.lluviaSobres ? "" : "none";
+}
 
   // ------------------------------------------
   // PANTALLA DE APERTURA (fondo + sello)

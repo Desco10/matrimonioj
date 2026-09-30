@@ -82,7 +82,7 @@ const EVENTO = {
 
   padres: {
     padre: "Jose Escobar - Maria arboleda",
-    madre: "Maria lasso"
+    madre: "luz Mary Salazar "
   },
 
 
@@ -160,6 +160,7 @@ const EVENTO = {
   // ==========================================
 
   regalo: {
+     lluviaSobres: false,
     titulo: "Tu presencia es nuestro mejor regalo",
     descripcion:
       "Lo más importante para nosotros es compartir este día contigo. Si deseas obsequiarnos algo, lo recibiremos con mucho cariño."
@@ -270,7 +271,7 @@ const EVENTO = {
 
   dressCode: {
 
-    habilitado: true,
+    habilitado: false,
 
     estilo: "Formal",
 
