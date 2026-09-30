@@ -30,7 +30,7 @@ const EVENTO = {
 
     fondo: {
       habilitado: true,
-      imagen: "assets/images/portada.png",
+      imagen: "assets/images/portada1.png",
       posicion: "center center",
       opacidad: 1,
       desenfoque: 0,
