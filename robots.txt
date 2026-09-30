@@ -1,0 +1,12 @@
+```text
+User-agent: *
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+Sitemap: https://joseynatalia.netlify.app/robots.txt
+```
