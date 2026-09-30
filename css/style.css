@@ -659,74 +659,107 @@ h2 {
 }
 
 
-/* ==========================================
-   FOTO PRINCIPAL
-========================================== */
+/* =========================================================
+   FOTO PRINCIPAL — MARCO EDITORIAL PREMIUM
+   ========================================================= */
 
 .main-photo {
-
-  padding-top: 20px;
-
+  padding-top: 30px;
   padding-bottom: 100px;
-
   display: flex;
-
   justify-content: center;
 }
 
-
+/* Contenedor de la fotografía */
 .photo-frame {
-
   position: relative;
-
-  width: min(90%, 500px);
-
-  padding: 10px;
-
-  background:
-    rgba(255,255,255,0.72);
-
-  border:
-    1px solid rgba(255,255,255,0.75);
-
-  backdrop-filter:
-    blur(10px);
-
-  -webkit-backdrop-filter:
-    blur(10px);
-
-  box-shadow:
-    var(--glass-shadow),
-    var(--glass-inner);
+  width: min(88%, 560px);
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
-
+/* Línea champagne exterior */
 .photo-frame::before {
-
   content: "";
-
   position: absolute;
-
-  inset: -10px;
-
-  border:
-    1px solid var(--accent);
-
-  opacity: 0.72;
-
+  inset: -9px;
+  border: 1px solid rgba(201, 164, 92, 0.75);
   pointer-events: none;
 }
 
-
-.photo-frame img {
-
-  width: 100%;
-
-  height: 620px;
-
-  object-fit: cover;
+/* Segunda línea interior muy sutil */
+.photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 1px solid rgba(201, 164, 92, 0.28);
+  pointer-events: none;
 }
 
+/* Fotografía */
+.photo-frame img {
+  display: block;
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+
+  border: 1px solid rgba(201, 164, 92, 0.95);
+
+  box-shadow:
+    0 18px 45px rgba(47, 51, 47, 0.18);
+
+  border-radius: 2px;
+}
+
+
+/* =========================================================
+   DETALLE DECORATIVO DE ESQUINAS
+   ========================================================= */
+
+.photo-frame {
+  --gold: rgba(201, 164, 92, 0.90);
+}
+
+/* Esquinas superiores */
+.photo-frame {
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .main-photo {
+    padding-top: 20px;
+    padding-bottom: 75px;
+  }
+
+  .photo-frame {
+    width: 86%;
+  }
+
+  .photo-frame::before {
+    inset: -7px;
+  }
+
+  .photo-frame::after {
+    inset: -3px;
+  }
+
+  .photo-frame img {
+    height: 500px;
+    border-width: 1px;
+    box-shadow:
+      0 12px 30px rgba(47, 51, 47, 0.16);
+  }
+}
 
 /* ==========================================
    COUNTDOWN

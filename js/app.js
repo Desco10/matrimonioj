@@ -1686,11 +1686,11 @@ if (rsvpForm) {
 
 Soy ${nombreCompleto}.
 
-Muchas gracias por invitarme a tus XV años. 💕
+Muchas gracias por invitarme a su Boda. 💕
 
-Confirmo con mucha alegría que sí asistiré a tu celebración.
+Confirmo con mucha alegría que sí asistiré a su celebración.
 ${lineaAsistencia ? `\n${lineaAsistencia}\n` : ""}
-Será un placer acompañarte en este momento tan especial. ✨
+Será un placer acompañarlos en este momento tan especial. ✨
 
 ¡Nos vemos! 💐`;
 
@@ -1706,13 +1706,13 @@ Será un placer acompañarte en este momento tan especial. ✨
 
 Soy ${nombreCompleto}.
 
-Muchas gracias por invitarme a tus XV años. 💕
+Muchas gracias por invitarme a su Boda. 💕
 
-Lamentablemente no podré asistir a tu celebración.
+Lamentablemente no podré asistir a su celebración.
 
 Te agradezco muchísimo la invitación y deseo que tengas una noche hermosa e inolvidable. ✨
 
-¡Felicidades por tus XV años! ❤️`;
+¡Felicidades por su Boda! ❤️`;
 
     }
 
