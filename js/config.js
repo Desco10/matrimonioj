@@ -172,7 +172,7 @@ const EVENTO = {
   // ==========================================
 
   musica: {
-    archivo: "assets/music/UNPACTOCONDIOS.mp3",
+    archivo: "assets/music/tealabaremibuenjesus.mp3",
     autoplayAlAbrir: true,
     volumenInicial: 0.25
   },
