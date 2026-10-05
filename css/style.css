@@ -4060,3 +4060,67 @@ h2 {
   }
 
 }
+
+/* ==========================================
+   FOTO PRINCIPAL — CORRECCIÓN FINAL
+   (pegar al final del archivo)
+========================================== */
+
+.main-photo {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.photo-frame {
+  position: relative;
+  isolation: isolate;
+  width: min(88%, 560px);
+  padding: 0;
+  line-height: 0;                 /* evita hueco bajo la imagen */
+
+  /* Sin cristal: evita glitches de backdrop-filter */
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.photo-frame img {
+  display: block;
+  width: 100%;
+  height: auto;                   /* respeta la proporción real, sin recortar */
+  max-width: 100%;
+
+  /* Proporción opcional. Por defecto "auto" = la de la foto.
+     Si quieres forzarla igual en todos los navegadores,
+     define --photo-ratio: 4 / 5;  en :root */
+  aspect-ratio: var(--photo-ratio, auto);
+  object-fit: cover;
+  object-position: center top;
+
+  border: 1px solid rgba(201, 164, 92, 0.95);
+  border-radius: 2px;
+  box-shadow: 0 18px 45px rgba(47, 51, 47, 0.18);
+}
+
+@media (max-width: 700px) {
+  .main-photo {
+    padding-top: 20px;
+    padding-bottom: 75px;
+  }
+
+  .photo-frame {
+    width: 86%;
+  }
+
+  .photo-frame::before { inset: -7px; }
+  .photo-frame::after  { inset: -3px; }
+
+  .photo-frame img {
+    height: auto;
+    box-shadow: 0 12px 30px rgba(47, 51, 47, 0.16);
+  }
+}
